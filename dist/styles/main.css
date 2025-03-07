@@ -23,6 +23,9 @@
 .dafitiStructure td {
   font-family: "Poppins", sans-serif;
 }
+.dafitiStructure h1, .dafitiStructure h2, .dafitiStructure h3, .dafitiStructure h4, .dafitiStructure h5, .dafitiStructure b, .dafitiStructure strong {
+  font-weight: 800;
+}
 .dafitiStructure h1 {
   font-size: 3rem;
   line-height: 1.05;
@@ -137,14 +140,15 @@ section.sec1 .countdown-dft .container-segment .segment .flip-card .bottom, sect
 }
 section.sec1 .countdown-dft .container-segment .segment .flip-card .top, section.sec1 .countdown-dft .container-segment .segment .flip-card .top-flip,
 section.sec1 .countdown-dft .container-segment .segment .flip-card .bottom, section.sec1 .countdown-dft .container-segment .segment .flip-card .bottom-flip {
-  width: 4.5vw;
-  font-size: 5vw;
+  width: 4.5rem;
+  font-size: 4rem;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   section.sec1 .countdown-dft .container-segment .segment .flip-card .top, section.sec1 .countdown-dft .container-segment .segment .flip-card .top-flip,
   section.sec1 .countdown-dft .container-segment .segment .flip-card .bottom, section.sec1 .countdown-dft .container-segment .segment .flip-card .bottom-flip {
     width: 8vw;
-    font-size: 11vw;
+    font-size: 10vw;
   }
 }
 section.sec1 .countdown-dft .container-segment .segment .flip-card .top-flip,
@@ -163,7 +167,7 @@ section.sec1 .countdown-dft .container-segment .segment .flip-card .bottom-flip 
   transform: rotateX(90deg);
 }
 section.sec1 .countdown-dft .container-segment .segment-title {
-  margin: 0;
+  margin: 0.5rem 0 0;
 }
 @keyframes flip-top {
   100% {
@@ -215,7 +219,7 @@ section.sec2 .line .boxText a {
   }
 }
 section.sec2 .line .boxText a button {
-  margin: 1rem 0;
+  margin: 1rem 0 0;
   border-radius: 0.5rem;
 }
 section.sec2 .line .boxText a button p {
@@ -232,11 +236,11 @@ section.sec3 .most_loved__section .most_loved__group h2 {
   color: transparent;
   background-clip: text;
   font-size: 2.5rem;
+  font-weight: 800;
   line-height: 1.1;
   margin: 0 auto 1rem;
   letter-spacing: 0.669px;
   opacity: 0.7;
-  text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-stroke: 2px #000000;
   text-stroke: 2px #ffffff;
@@ -254,6 +258,7 @@ section.sec3 .most_loved__section .most_loved__tabs input[type=radio] {
 section.sec3 .most_loved__section .most_loved__tabs .tab {
   align-items: center;
   border-radius: 19px 19px 0 0;
+  background-color: rgba(0, 0, 0, 0.0666666667);
   bottom: -16px;
   cursor: pointer;
   display: flex;
@@ -337,11 +342,14 @@ section.sec3 .most_loved__section .most_loved__logos img {
 }
 @media (max-width: 768px) {
   section.sec3 .most_loved__section .most_loved__tabs {
-    grid: repeat(2, auto)/repeat(6, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.3rem;
     margin-top: 15px;
   }
   section.sec3 .most_loved__section .most_loved__tabs .tab {
+    width: 45%;
     background-color: #cccccc;
     border-radius: 0.8rem;
     bottom: 0;
@@ -350,7 +358,7 @@ section.sec3 .most_loved__section .most_loved__logos img {
     padding: 0;
   }
   section.sec3 .most_loved__section .most_loved__tabs .tab h3 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.1;
     margin: 0;
     padding: 0.5rem 1rem;
