@@ -36,6 +36,8 @@ gulp.task('pug', () =>
         .pipe(pug())
         .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
         .pipe(gulp.dest(paths.pug.dest))
+        .on('end', () => console.log('Pug task completed.'))
+        .on('data', (file) => console.log('Processing file:', file.path))
 );
 
 // Tarefa para compilar Sass
@@ -44,7 +46,8 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.sass.dest));
+        .pipe(gulp.dest(paths.sass.dest))
+        .on('end', () => console.log('Sass task completed.'));
 });
 
 // Tarefa para compilar JavaScript
@@ -54,17 +57,19 @@ gulp.task('js', function () {
         .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.js.dest));
+        .pipe(gulp.dest(paths.js.dest))
+        .on('end', () => console.log('JavaScript task completed.'));
 });
 
-// Tarefa para compilar Scripts e bibliotecas extenas
+// Tarefa para compilar Scripts e bibliotecas externas
 gulp.task('exjs', function () {
     return gulp.src(paths.exjs.src)
         .pipe(sourcemaps.init())
         .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.exjs.dest));
+        .pipe(gulp.dest(paths.exjs.dest))
+        .on('end', () => console.log('External JS task completed.'));
 });
 
 gulp.task('excss', function () {
@@ -72,7 +77,8 @@ gulp.task('excss', function () {
         .pipe(sourcemaps.init())
         .pipe(concat('style.css'))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.excss.dest));
+        .pipe(gulp.dest(paths.excss.dest))
+        .on('end', () => console.log('External CSS task completed.'));
 });
 
 // Tarefa padrão para rodar todas as tarefas

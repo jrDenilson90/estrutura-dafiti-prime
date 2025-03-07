@@ -1,0 +1,31 @@
+.recommendationsTemplate {
+  width: 100%;
+  padding-bottom: 5vw;
+}
+.recommendationsTemplate .boxFlex {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  gap: 1rem;
+  padding: 0 0 1rem;
+}
+.recommendationsTemplate .boxFlex .wrapper-carousel {
+  width: 100%;
+}
+.recommendationsTemplate .boxFlex .wrapper-carousel .keen-slider .keen-slider__slide .card .boxImg {
+  overflow: hidden;
+}
+.recommendationsTemplate .boxFlex .wrapper-carousel .keen-slider .keen-slider__slide .card .boxImg img {
+  transition-duration: 0.3s;
+  width: 100%;
+  display: block;
+}
+@media (max-width: 768px) {
+  .recommendationsTemplate .boxFlex .wrapper-carousel .keen-slider .keen-slider__slide .card .boxImg img {
+    width: 40vw;
+  }
+}
+.recommendationsTemplate .boxFlex .wrapper-carousel .keen-slider .keen-slider__slide .card:hover .boxImg img {
+  transform: scale(1.05);
+}
+/*# sourceMappingURL=recommendations.css.map */

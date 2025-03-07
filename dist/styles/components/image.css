@@ -1,0 +1,14 @@
+.boxFlex {
+  width: 100%;
+  display: flex;
+}
+.boxFlex .left {
+  width: 50%;
+}
+.boxFlex .left img {
+  width: 100%;
+}
+.boxFlex .right {
+  width: 50%;
+}
+/*# sourceMappingURL=image.css.map */

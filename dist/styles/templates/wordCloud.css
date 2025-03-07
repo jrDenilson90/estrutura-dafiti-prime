@@ -1,0 +1,65 @@
+.wordCloudTemplate {
+  background-color: #E9E9E9;
+  padding: 5vw 10%;
+}
+@media (max-width: 768px) {
+  .wordCloudTemplate {
+    padding: 5vw 5%;
+  }
+}
+.wordCloudTemplate .title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 5.5vw;
+  line-height: 1;
+}
+.wordCloudTemplate .title h2 b {
+  font-weight: bold;
+}
+.wordCloudTemplate .boxFlex {
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .wordCloudTemplate .boxFlex {
+    gap: 2vw;
+    width: calc(100% - 2rem);
+  }
+}
+.wordCloudTemplate .boxFlex .card {
+  border: solid 0.2vw black;
+  text-decoration: none;
+  padding: 0vw 2vw;
+  border-radius: 3vw;
+  transition-duration: 0.3s;
+}
+@media (max-width: 768px) {
+  .wordCloudTemplate .boxFlex .card {
+    padding: 1vw 2.5vw;
+    border-radius: 10vw;
+  }
+}
+.wordCloudTemplate .boxFlex .card:hover {
+  transform: scale(1.05);
+  background-color: black;
+}
+.wordCloudTemplate .boxFlex .card:hover h3 {
+  color: white;
+}
+.wordCloudTemplate .boxFlex .card h3 {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+@media (max-width: 768px) {
+  .wordCloudTemplate .boxFlex .card h3 {
+    font-size: 4vw;
+    line-height: 1;
+  }
+}
+/*# sourceMappingURL=wordCloud.css.map */

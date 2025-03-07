@@ -1,0 +1,105 @@
+.brandsTemplate {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .brandsTemplate {
+    padding: 0 0rem 5vw;
+  }
+}
+.brandsTemplate .boxFlex {
+  background-color: #E9E9E9;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+  flex-wrap: wrap;
+  padding: 4vw 13% 5vw;
+  margin-bottom: 5vw;
+}
+.brandsTemplate .boxFlex::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+@media (max-width: 768px) {
+  .brandsTemplate .boxFlex {
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: start;
+    overflow-x: auto;
+    padding: 2rem;
+  }
+}
+.brandsTemplate .boxFlex .box {
+  width: calc(25% - 3vw);
+}
+@media (max-width: 768px) {
+  .brandsTemplate .boxFlex .box {
+    width: auto;
+    overflow: initial;
+  }
+}
+.brandsTemplate .boxFlex .box:hover .card img {
+  transform: scale(1.07);
+  opacity: 1;
+}
+.brandsTemplate .boxFlex .box:hover h3 {
+  color: #000;
+}
+.brandsTemplate .boxFlex .box .card {
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  aspect-ratio: 1.1;
+  border-radius: 3.5vw;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .brandsTemplate .boxFlex .box .card {
+    width: auto;
+    overflow: initial;
+  }
+}
+@media (max-width: 768px) {
+  .brandsTemplate .boxFlex .box .card {
+    width: auto;
+  }
+}
+.brandsTemplate .boxFlex .box .card img {
+  transition-duration: 0.3s;
+  position: absolute;
+  display: block;
+  width: 110%;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .brandsTemplate .boxFlex .box .card img {
+    width: 23vw;
+    position: relative;
+  }
+}
+.brandsTemplate .boxFlex .box h3 {
+  transition-duration: 0.6s;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: #d1cece;
+  width: 100%;
+  font-size: 1.4vw;
+  filter: blur(0px);
+  margin-top: 0.8vw;
+  margin-bottom: -1.3vw;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .brandsTemplate .boxFlex .box h3 {
+    font-size: 2.6vw;
+    margin-top: 1.5vw;
+  }
+}
+/*# sourceMappingURL=brands.css.map */
