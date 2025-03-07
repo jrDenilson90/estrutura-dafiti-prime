@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/image.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;AACA;EACI;;AACA;EACI;;AAGR;EACI","file":"image.css","sourcesContent":[".boxFlex {\r\n    width: 100%;\r\n    display: flex;\r\n    .left {\r\n        width: 50%;\r\n        img {\r\n            width: 100%;\r\n        }\r\n    }\r\n    .right {\r\n        width: 50%;\r\n    }\r\n}"]}
